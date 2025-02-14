@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTFLIX</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<div class="topfutter">
+    <a href="auth.html" style="text-decoration:none"><h1>NOTFLIX</h1></a>
+</div>
+<body>
+    <div class="container">
+        <!-- შესვლა -->
+        <div id="login-container">
+            <h2>შესვლა</h2>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="მომხმარებლის სახელი" required>
+                
+                <div class="password-container">
+                    <input type="password" id="login-password" placeholder="პაროლი" required>
+                    <span class="toggle-password" onclick="togglePassword('login-password', this)">👁️</span>
+                </div>
+
+                <button type="submit">შესვლა</button>
+            </form>
+            <p>არ გაქვს ანგარიში? <a href="#" id="show-register">რეგისტრაცია</a></p>
+        </div>
+
+        <!-- რეგისტრაცია -->
+        <div id="register-container" style="display: none;">
+            <h2>რეგისტრაცია</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="მომხმარებლის სახელი" required>
+
+                <div class="password-container">
+                    <input type="password" id="register-password" placeholder="პაროლი" required>
+                    <span class="toggle-password" onclick="togglePassword('register-password', this)">👁️</span>
+                </div>
+
+                <div class="password-container">
+                    <input type="password" id="confirm-password" placeholder="გაიმეორე პაროლი" required>
+                    <span class="toggle-password" onclick="togglePassword('confirm-password', this)">👁️</span>
+                </div>
+
+                <button type="submit">რეგისტრაცია</button>
+            </form>
+            <p>უკვე გაქვს ანგარიში? <a href="#" id="show-login">შესვლა</a></p>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+
+</body>
+</html>

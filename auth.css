@@ -1,0 +1,162 @@
+/* ---- ძირითადი სტილები ---- */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* ---- შესვლის/რეგისტრაციის ბლოკი ---- */
+.container {
+    padding: 50px;
+    border-radius: 15px;
+    background: rgba(10, 10, 10, 0.611); /* ბნელი ეფექტი */
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+    text-align: center;
+    width: 450px;
+    backdrop-filter: blur(8px);
+    animation: glowEffect 3s infinite alternate;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ---- განათების ეფექტი ---- */
+@keyframes glowEffect {
+    0% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); }
+    100% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); }
+}
+
+/* ---- ტექსტის სტილები ---- */
+h2 {
+    color: #FF3131;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ---- ინპუტ ველები ---- */
+input {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    padding: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+}
+
+/* ---- ინპუტის ანიმაცია ---- */
+input:focus {
+    border-color: #FF3131;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+    transform: scale(1.05);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---- ღილაკის სტილი ---- */
+button {
+    width: 60%;
+    padding: 14px;
+    background: linear-gradient(135deg, #FF3131, #FF5733);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin: 25px auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: buttonPulse 2s infinite;
+}
+
+/* ---- ღილაკის პულსაციის ეფექტი ---- */
+@keyframes buttonPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* ---- ღილაკის ჰოვერი ---- */
+button:hover {
+    background: linear-gradient(135deg, #FF5733, #FF3131);
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.8);
+}
+
+/* ---- ბმულების დიზაინი ---- */
+p {
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+p a {
+    color: #FF3131;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: #FF5733;
+}
+.topfutter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the header to the top of the screen */
+    top: 0; /* Fix at the top */
+    left: 0; /* Ensure it's aligned to the left */
+    width: 100%; /* Take full width of the screen */
+    z-index: 1000; /* Ensure it stays above other content */
+    }
+  /* Styling for the title and link */
+.topfutter h1 {
+    font-size: 40px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    color: #f9f3f3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}

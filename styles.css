@@ -1,0 +1,228 @@
+/* body-ს ბექგრაუნდი */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('pexels-tima-miroshnichenko-7991582.webp'); /* აქ ჩასვათ თქვენი სურათის მისამართი */
+    background-size: cover; /* სურათი სავსე ფონისთვის */
+    background-position: center; /* სურათი ცენტრში განლაგება */
+    background-attachment: fixed; /* სურათი არ გადაადგილდება გვერდის სრიალისას */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* სრულის სიმაღლე */
+}
+
+/* მთავარი ბოქსი */
+.container {
+    background-color: hsla(0, 84%, 7%, 0.700); /* ნახევრად გამჭვირვალე ფონი */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    transform: translateY(200px)
+}
+
+/* სხვა სტილები */
+.heart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.heart h1 {
+    font-size: 50px;
+    color: #db9797;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Select the label by its 'for' attribute */
+label[for="girl-genre"] {
+    color: #ffffff; /* Change the label color (e.g., to a tomato red) */
+    font-size: 18px; /* Optional: adjust the font size */
+    font-weight: bold; /* Optional: make the text bold */
+}
+
+/* Select the label by its 'for' attribute */
+label[for="boy-genre"] {
+    color: #ffffff; /* Change the label color (e.g., to a tomato red) */
+    font-size: 18px; /* Optional: adjust the font size */
+    font-weight: bold; /* Optional: make the text bold */
+}
+.genres {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.genre-selector {
+    flex-basis: 48%;
+}
+
+.genre-selector label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #755847;
+    font-size: 16px;
+}
+
+#search-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #6e1d1d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #6e0808;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer {
+    height: 95px;
+    background-color: #333;
+    color: rgb(17, 1, 90);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info {
+    flex: 1;
+    padding: 0 20px;
+    font-size: 100px;
+}
+.footer-info p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/* Footer სტილი */
+footer {
+    background-color: #0f0e0e67;
+    color: white;
+    padding: 1px 0;
+    position: absolute; /* აუცილებელია footer-ის განთავსებისთვის ბოლოში */
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+#results{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 5px;
+    color: #ffffff;
+}
+/* General styling for the topfutter (header) */
+.topfutter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-image: linear-gradient(to right, #000000, #530808); /* Gradient background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the header to the top of the screen */
+    top: 0; /* Fix at the top */
+    left: 0; /* Ensure it's aligned to the left */
+    width: 100%; /* Take full width of the screen */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+  /* Styling for the title and link */
+  .topfutter h1 {
+    font-size: 40px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    color: #f9f3f3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+  }
+  
+  /* On hover, change title color */
+  .topfutter h1:hover {
+    color: #89103a;
+  }
+  
+  /* Styling for the cart section */
+  .cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart a {
+    text-decoration: none;
+  }
+  
+  .cart-icon {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .cart-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    opacity: 0.8; /* Slight transparency effect */
+  }
+  #logout-button {
+    background-color: #89103a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    left: -25px; /* მარცხნივ 25px-ით გადაწევა */
+}
+
+#logout-button:hover {
+    background-color: #6e0808;
+}
